@@ -10,6 +10,5 @@
 
 	p { @apply mt-2; }
 	a { @apply text-accent hover-text underline; }
-	em { @apply font-light; }
 	hr { @apply my-2; }
 }

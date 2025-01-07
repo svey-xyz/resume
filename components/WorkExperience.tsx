@@ -15,7 +15,9 @@ export const WorkExperience = ({exp, className}: Props) => {
 		<div className={`${className}`}>
 			<div className="flex flex-row justify-between items-baseline">
 				<h3>{ title }</h3>
-				<span><em>{business}</em> | <em>{readableDate(date, 'Month YYYY')}</em></span>
+				<span className='font-extralight'>
+					<em>{business}</em> | <em>{readableDate(date, 'Month YYYY')}</em>
+				</span>
 			</div>
 			<ul className='pl-5 list-disc'>
 				{ points.flatMap((point) => {
