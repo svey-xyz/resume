@@ -1,12 +1,12 @@
 @layer base {
 	body {
-		@apply font-body text-left text-base text-fg-primary bg-bg-primary;
+		@apply font-serif text-left text-base text-fg-primary bg-bg-primary font-light;
 	}
 
-	h1, h2, h3, h4, h5, h6 { @apply font-heading font-bold; }
-	h1 { @apply text-2xl; }
-	h2 { @apply text-xl; }
-	h3 { @apply text-lg; }
+	h1, h2, h3, h4, h5, h6 { @apply font-serif; }
+	h1 { @apply text-2xl font-bold; }
+	h2 { @apply text-xl font-bold; }
+	h3 { @apply text-lg font-semibold; }
 
 	p { @apply mt-2; }
 	a { @apply hover-text; }

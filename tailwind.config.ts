@@ -57,8 +57,8 @@ const TailwindConfig = {
 				}
 			},
 			fontFamily: {
-				heading: ['var(--custom-font)'],
-				body: ['var(--custom-font)']
+				serif: ['var(--font-mona-serif)', 'serif'],
+				sans: ['var(--font-mona-sans)', 'sans-serif']
 			},
 			fontSize: {
 				sm: 'calc(var(--text-base-size) * (1 / var(--text-scale)))',

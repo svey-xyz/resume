@@ -9,9 +9,13 @@ const Home = () => {
 			
 			<hr />
 
-			<h2><strong>Professional Experience</strong></h2>
-			<h3>Open Source Contributions</h3>
-			<p><em>Freelance</em> | <em>May 2022 - Present</em></p>
+			<h2>Professional Experience</h2>
+
+			<div className="flex flex-row justify-between items-baseline">
+				<h3>Open Source Contributions</h3>
+				<span><em>Freelance</em> | <em>May 2022 - Present</em></span>
+			</div>
+			
 			<ul>
 				<li>Created &amp; maintain <a href="https://www.npmjs.com/package/@svey-xyz/simple-shader-component">Simple Shader Component</a> - a simple to use webgl shader component, with included framework wrappers and strong typing.</li>
 				<li>Created <a href="https://www.npmjs.com/package/vldx">vldx</a> -  an open-srouce javascript based HTML form validator that's easy to use, reduces API calls, and supports custom rules.</li>
