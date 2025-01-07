@@ -19,7 +19,7 @@ const RootLayout = ({
 			</head>
 			<body className={`antialiased grid min-h-screen place-items-center bg-bg-secondary print:min-h-0`}>
 				<main
-					className="m-4 h-[297mm] w-[210mm] overflow-hidden rounded-md bg-white p-8 shadow-lg print:m-0 print:h-screen print:w-screen print:rounded-none print:shadow-none"
+					className="m-4 p-8 h-[297mm] w-[210mm] overflow-hidden rounded-md bg-white shadow-lg print:p-0 print:m-0 print:h-screen print:w-screen print:rounded-none print:shadow-none"
 				>
 					{children}
 				</main>
