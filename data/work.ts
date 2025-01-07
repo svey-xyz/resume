@@ -33,7 +33,7 @@ const work: Array<workExperience> = [
 		points: [
 			`Clients include [Victory Social Club (VSC)](https://victorysocialclub.com/), [LPT BIA](https://lptbia.com/), Toronto Metropolitan University (TMU), the city of Toronto, and more.`,
 			`Reduced overhead by creating bespoke management interfaces using Sanity and Nextjs; resulting in hours of work saved for clients.`,
-			`Increased Lighthouse scores by up to 30pts by reducing CSR and SSR where applicable in favour of SSG.`,
+			`Increased Lighthouse scores by up to 30pts by reducing CSR and SSR, where applicable, in favour of SSG.`,
 			`Provided intuitive documentation for a custom client interface, making onboarding new developers to the project easier.`,
 		]
 	},
@@ -45,8 +45,8 @@ const work: Array<workExperience> = [
 			end: new Date(`December 2021`)
 		},
 		points: [
-			`Designed and developed a large scale public exhibition. Created interactive systems for participants to engage with the work.`,
-			`Increased participation with the exhibition by clearly communicating the multifaceted thoughts of an interdisciplinary team on the web.`,
+			`Used front & backend web technologies to create a large scale interactive art exhibition, that was deployed on the streets of Toronto with local rpis hosting the web servers.`,
+			`Increased participation with the exhibition by clearly communicating the multifaceted thoughts of an interdisciplinary team.`,
 		]
 	},
 ]
