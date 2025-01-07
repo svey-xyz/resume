@@ -31,26 +31,32 @@ export const capitalize = (word: string) => {
 	return word.charAt(0).toUpperCase() + word.substring(1);
 }
 
-export const readableDate = (date: CustomDate, locales?: Intl.LocalesArgument, options?: Intl.DateTimeFormatOptions): ReactNode => {
+type readableDateProps = {
+	date: CustomDate,
+	locales?: Intl.LocalesArgument,
+	options?: Intl.DateTimeFormatOptions
+}
 
-	const startDateText = date.start.toLocaleDateString(
-		'en-ca',
-		{
-			year: 'numeric',
-			month: 'long',
-		}
-	)
-	const endDateText = date.end?.toLocaleDateString(
-		'en-ca',
-		{
-			year: 'numeric',
-			month: 'long',
-		}
-	) ?? `Present`
+export const readableDate = (date: CustomDate): ReactNode => {
+	const locales = date.locales ?? 'en-ca'
+	const options = date.options ?? {
+		year: 'numeric',
+		month: 'long',
+	}
+
+	const ongoingText = `Present`
+
+	const startDateText = date.start.toLocaleDateString(locales, options)
+	const endDateText = date.end?.toLocaleDateString(locales, options)
 
 	return (
 		<span>
-			{startDateText} - {endDateText}
+			{startDateText}
+			{ endDateText ?
+				<> - { endDateText}</> :
+				date.ongoing &&
+				<> - {ongoingText}</>
+			}
 		</span>
 	);
 }

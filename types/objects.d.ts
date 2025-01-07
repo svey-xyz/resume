@@ -19,6 +19,7 @@ export interface _social {
 export interface _Date {
 	start: Date
 	end?: Date
+	ongoing?: boolean
 	locales?: Intl.LocalesArgument
 	options?: Intl.DateTimeFormatOptions
 

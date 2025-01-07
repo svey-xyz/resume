@@ -3,7 +3,8 @@ const work: Array<workExperience> = [
 		title: 'Open Source Contributions',
 		business: 'Freelance',
 		date: {
-			start: new Date(`May 2022`)
+			start: new Date(`May 2022`),
+			ongoing: true
 		},
 		points: [
 			`Created & maintain [Simple Shader Component](https://www.npmjs.com/package/@svey-xyz/simple-shader-component) - a simple to use webgl shader component, with included framework wrappers and strong typing.`,
@@ -16,7 +17,8 @@ const work: Array<workExperience> = [
 		title: 'Lecturing in Web Design',
 		business: 'Freelance',
 		date: {
-			start: new Date(`January 2021`)
+			start: new Date(`January 2021`),
+			ongoing: true
 		},
 		points: [
 			`Created an introduction to web design workshop for a class of 4th year students at TMU.A 3 hour lexture with hands - on compoennts that has been highly requested by students and proffessors. 2025 will mark my 4th year running of conducting this workshop at TMU.`,
@@ -28,7 +30,8 @@ const work: Array<workExperience> = [
 		title: 'Web Development Freelance',
 		business: 'Freelance',
 		date: {
-			start: new Date(`March 2020`)
+			start: new Date(`March 2020`),
+			ongoing: true
 		},
 		points: [
 			`Clients include [Victory Social Club (VSC)](https://victorysocialclub.com/), [LPT BIA](https://lptbia.com/), Toronto Metropolitan University (TMU), the city of Toronto, and more.`,

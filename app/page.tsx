@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { WorkExperience } from "@/components/WorkExperience"
-import { personal, work } from "@/data";
+import { personal, work, education } from "@/data";
 
 const Home = () => {
   return (
@@ -9,9 +9,8 @@ const Home = () => {
 			
 			<hr />
 
-			<h2>Professional Experience</h2>
-
 			<div>
+				<h2>Professional Experience</h2>
 				{work.flatMap((exp) => {
 					return <WorkExperience exp={exp} className="mb-2"/>
 				})}
@@ -19,11 +18,16 @@ const Home = () => {
 
 			<hr />
 
-			<h2>Education</h2>
-			<h3>Bachelor's Degree of Fine Arts with a specialization in Integrated Digital and with distinction</h3>
+			<div>
+				<h2>Education</h2>
+				{education.flatMap((exp) => {
+					return <WorkExperience exp={exp} className="mb-2" />
+				})}
+			</div>
+			{/* <h3>BFA in Integrated Digital, with distinction</h3>
 			<p><em>Toronto Metropolitan University</em> | <em>2020</em>
 				relevant courses, grades
-				thesis - 2d platformer</p>
+				thesis - 2d platformer</p> */}
 
 			<hr />
 
