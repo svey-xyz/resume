@@ -9,7 +9,7 @@
 	h3 { @apply text-lg font-semibold; }
 
 	p { @apply mt-2; }
-	a { @apply hover-text; }
+	a { @apply text-accent hover-text underline; }
 	em { @apply font-light; }
 	hr { @apply my-2; }
 }

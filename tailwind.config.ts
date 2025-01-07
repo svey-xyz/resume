@@ -63,11 +63,12 @@ const TailwindConfig = {
 			fontSize: {
 				sm: 'calc(var(--text-base-size) * (1 / var(--text-scale)))',
 				base: 'var(--text-base-size)',
-				xl: 'calc(var(--text-base-size) * (1 + 2 * (var(--text-scale) - 1)))',
-				'2xl': 'calc(var(--text-base-size) * (1 + 3 * (var(--text-scale) - 1)))',
-				'3xl': 'calc(var(--text-base-size) * (1 + 4 * (var(--text-scale) - 1 )))',
-				'4xl': 'calc(var(--text-base-size) * (1 + 5 * (var(--text-scale) - 1 )))',
-				'5xl': 'calc(var(--text-base-size) * (1 + 6 * (var(--text-scale) - 1)))',
+				lg: 'calc(var(--text-base-size) * (1 + 2 * (var(--text-scale) - 1)))',
+				xl: 'calc(var(--text-base-size) * (1 + 3 * (var(--text-scale) - 1)))',
+				'2xl': 'calc(var(--text-base-size) * (1 + 4 * (var(--text-scale) - 1)))',
+				'3xl': 'calc(var(--text-base-size) * (1 + 5 * (var(--text-scale) - 1 )))',
+				'4xl': 'calc(var(--text-base-size) * (1 + 6 * (var(--text-scale) - 1 )))',
+				'5xl': 'calc(var(--text-base-size) * (1 + 7 * (var(--text-scale) - 1)))',
 			},
 			borderRadius: {
 				'rounded-sm': 'calc(var(--rounded-size) * (1 / var(--rounded-scale)))',

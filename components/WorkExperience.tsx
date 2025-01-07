@@ -3,16 +3,21 @@ import React from 'react';
 import crypto from 'crypto'
 import { readableDate } from '@/lib/stringFunctions';
 
-export const WorkExperience = ({exp}: {exp: workExperience}) => {
+type Props = {
+	exp: workExperience,
+	className?: string
+}
+
+export const WorkExperience = ({exp, className}: Props) => {
 	const { title, business, date, points } = exp
 
 	return (
-		<div className=''>
+		<div className={`${className}`}>
 			<div className="flex flex-row justify-between items-baseline">
 				<h3>{ title }</h3>
 				<span><em>{business}</em> | <em>{readableDate(date, 'Month YYYY')}</em></span>
 			</div>
-			<ul>
+			<ul className='pl-5 list-disc'>
 				{ points.flatMap((point) => {
 					const key = crypto.createHash('md5').update(point).digest('hex');
 					return (
