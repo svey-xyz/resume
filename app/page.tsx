@@ -1,4 +1,5 @@
-
+import { WorkExperience } from "@/components/WorkExperience"
+import workExperiences from "@/data/work";
 
 const Home = () => {
   return (
@@ -11,47 +12,11 @@ const Home = () => {
 
 			<h2>Professional Experience</h2>
 
-			<div className="flex flex-row justify-between items-baseline">
-				<h3>Open Source Contributions</h3>
-				<span><em>Freelance</em> | <em>May 2022 - Present</em></span>
+			<div>
+				{workExperiences.flatMap((exp) => {
+					return <WorkExperience exp={exp}/>
+				})}
 			</div>
-			
-			<ul>
-				<li>Created &amp; maintain <a href="https://www.npmjs.com/package/@svey-xyz/simple-shader-component">Simple Shader Component</a> - a simple to use webgl shader component, with included framework wrappers and strong typing.</li>
-				<li>Created <a href="https://www.npmjs.com/package/vldx">vldx</a> -  an open-srouce javascript based HTML form validator that's easy to use, reduces API calls, and supports custom rules.</li>
-				<li>Open sourced my personal <a href="https://github.com/svey-xyz/site-template">Next.js template</a> - with highly configurable base components and schemas.</li>
-				<li>Received positive community &amp; maintainer feedback when <a href="https://github.com/ndimatteo/sanity-plugin-note-field/pull/5">contributing to an open source Sanity plugin</a>.</li>
-			</ul>
-
-			<h3>Lecturing in Web Design</h3>
-			<p><em>Freelance</em> | <em>January 2021 - Present</em></p>
-			<ul>
-				<li>Created an introduction to web design workshop for a class of 4th year students at TMU. A 3 hour lexture with hands-on compoennts that has been highly requested by students and proffessors. 2025 will mark my 4th year running of conducting this workshop at TMU.</li>
-				<li>Positive feedback from TMU lead to the creation of an asynchronous Wordpress workshop for the University of North Carolina at Greensboro (UNCG), that has been used to teach a large number of students over the years.</li>
-				<li>Was invited to present artist talks at TMU and UNCG, on- web design, web development, interactive web installations, and working as a contractor.</li>
-			</ul>
-
-			<h3>Web Development <em>Freelance</em> | <em>March 2020 - Present</em></h3>
-			<ul>
-				<li>Clients include <a href="https://victorysocialclub.com/">Victory Social Club (VSC)</a>, <a href="https://lptbia.com/">LPT BIA</a>, Toronto Metropolitan University (TMU), the city of Toronto, and more.</li>
-				<li>Reduced overhead by creating bespoke management interfaces using Sanity and Nextjs; resulting in hours of work saved for clients.</li>
-				<li>Increased Lighthouse scores by up to 30pts by reducing CSR and SSR where applicable in favour of SSG.</li>
-				<li>Provided intuitive documentation for a custom client interface, making onboarding new developers to the project easier.</li>
-			</ul>
-
-			<h3>Interactive Art Exhibition</h3>
-			<p><em>Freelance</em> | <em>September 2021 - December 2021</em></p>
-			<ul>
-				<li>
-					<p>Designed and developed a large scale public exhibition. Created interactive systems for participants to engage with the work.</p>
-				</li>
-				<li>
-					<p>Increased participation with the exhibition by clearly communicating the multifaceted thoughts of an interdisciplinary team on the web.</p>
-					<p>what I did, what tech i used, for whom, to what end - to high degress of client satisfaction</p>
-					<p>what and why</p>
-					<p>include links</p>
-				</li>
-			</ul>
 
 			<hr />
 
