@@ -1,4 +1,4 @@
-const workExperiences: Array<workExperience> = [
+const work: Array<workExperience> = [
 	{
 		title: 'Open Source Contributions',
 		business: 'Freelance',
@@ -51,4 +51,4 @@ const workExperiences: Array<workExperience> = [
 	},
 ]
 
-export default workExperiences
+export default work
