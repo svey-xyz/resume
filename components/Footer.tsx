@@ -5,7 +5,7 @@ const Footer = ({}: {}) => {
 	return (
 		<section className='relative w-full mt-2'>
 			<div className='flex flex-row justify-between text-xs'>
-				<Link href={`https://github.com/svey-xyz/resume`}>checkout the template for this resume</Link>
+				<Link href={`https://github.com/svey-xyz/resume`}>checkout the template I built for this resume</Link>
 			</div>
 		</section>
 	);
