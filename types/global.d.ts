@@ -1,7 +1,8 @@
 import {
 	_Experience,
 	_Date,
-	_personal
+	_personal,
+	_technology
 } from './objects'
 
 declare global {
@@ -9,5 +10,6 @@ declare global {
 	type CustomDate = _Date
 	type Experience = _Experience
 	type personal = _personal
+	type technology = _technology
 
 }

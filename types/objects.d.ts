@@ -9,6 +9,12 @@ export interface _personal {
 	name: string
 	socials: Array<_social>
 	blurb: string
+	technologies: Array<_technology>
+}
+
+export interface _technology {
+	type: string
+	tools: Array<string>
 }
 
 export interface _social {

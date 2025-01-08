@@ -3,7 +3,7 @@ import { Experience } from "@/components/Experience"
 import { personal, work, education } from "@/data";
 import { Section } from "@/components/Section";
 import crypto from 'crypto'
-import { Technologies } from "@/components/Technologies";
+import { Technology } from "@/components/Technology";
 
 const Home = () => {
   return (
@@ -26,22 +26,16 @@ const Home = () => {
 
 
 			<Section title={`Technologies`} >
-				<Technologies
-					title="Languages"
-					technologies={["Javascript", "Typescript", "Python", "Java", "PHP"]}
-				/>
-				<span className="">
-					<strong>Frontend:</strong>
-					React Tailwind Next.js HTML5 11ty Wordpress Shopify
-				</span>
-				<span className="">
-					<strong>Backend:</strong>
-					Prisma Cloudflare Workers Sanity Webpack eslint postcss node bun
-				</span>
-				<span className="">
-					<strong>Other:</strong>
-					Git Linux Docker Kubernetes GraphQL SQL SQLite REST Proxmox
-				</span>
+				{ personal.technologies?.flatMap((tech) => {
+					return (
+						<Technology
+							type={tech.type}
+							tools={tech.tools}
+						/>
+					)
+				})
+				}
+				
 			</Section>
 
 			<Section title={`Projects`} >

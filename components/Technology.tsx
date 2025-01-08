@@ -4,8 +4,8 @@ import React, { PropsWithChildren } from 'react';
 import { Icon, iconExists } from '@iconify/react';
 
 type Props = {
-	title: string
-	technologies: Array<string>
+	type: string
+	tools: Array<string>
 }
 
 const getIconName = (tech: string) => {
@@ -17,14 +17,15 @@ const getIconName = (tech: string) => {
 	return iconName
 };
 
-export const Technologies = ({title, technologies}:PropsWithChildren<Props>) => {
+export const Technology = ({type, tools}:PropsWithChildren<Props>) => {
 	return (
 		<span className=''>
-			<strong>{title}: </strong>
-			{technologies.flatMap((tech, i, arr) => {
+			<strong>{type}: </strong>
+			{tools.flatMap((tool, i, arr) => {
 				return (
 					<span>
-						<Icon icon={getIconName(tech)} className='inline'/> { tech }
+						{/* <Icon icon={getIconName(tech)} className='inline'/> //TODO: add icons */}
+						{tool }
 						{ (i < arr.length - 1) && <>, </> }
 					</span>
 				)
