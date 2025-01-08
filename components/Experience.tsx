@@ -4,19 +4,19 @@ import crypto from 'crypto'
 import { readableDate } from '@/lib/stringFunctions';
 
 type Props = {
-	exp: workExperience,
+	exp: Experience,
 	className?: string
 }
 
-export const WorkExperience = ({exp, className}: Props) => {
-	const { title, business, date, points } = exp
+export const Experience = ({exp, className}: Props) => {
+	const { title, location, date, points } = exp
 
 	return (
 		<div className={`${className}`}>
 			<div className="flex flex-row justify-between items-baseline flex-wrap">
 				<h3>{ title }</h3>
 				<span className='font-extralight'>
-					<em>{business}</em> | <em>{readableDate(date)}</em>
+					<em>{location}</em> | <em>{readableDate(date)}</em>
 				</span>
 			</div>
 			<ul className='pl-5 list-disc'>

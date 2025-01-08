@@ -1,7 +1,7 @@
-const education: Array<workExperience> = [
+const education: Array<Experience> = [
 	{
 		title: 'BFA in Integrated Digital, with distinction',
-		business: 'Toronto Metropolitan University',
+		location: 'Toronto Metropolitan University',
 		date: {
 			start: new Date(`May 2020`),
 			options: {

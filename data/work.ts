@@ -1,7 +1,7 @@
-const work: Array<workExperience> = [
+const work: Array<Experience> = [
 	{
 		title: 'Open Source Contributions',
-		business: 'Freelance',
+		location: 'Freelance',
 		date: {
 			start: new Date(`May 2022`),
 			ongoing: true
@@ -15,7 +15,7 @@ const work: Array<workExperience> = [
 	},
 	{
 		title: 'Lecturing in Web Design',
-		business: 'Freelance',
+		location: 'Freelance',
 		date: {
 			start: new Date(`January 2021`),
 			ongoing: true
@@ -28,7 +28,7 @@ const work: Array<workExperience> = [
 	},
 	{
 		title: 'Web Development Freelance',
-		business: 'Freelance',
+		location: 'Freelance',
 		date: {
 			start: new Date(`March 2020`),
 			ongoing: true
@@ -42,7 +42,7 @@ const work: Array<workExperience> = [
 	},
 	{
 		title: 'Interactive Art Exhibition',
-		business: 'City of Toronto',
+		location: 'City of Toronto',
 		date: {
 			start: new Date(`September 2021`),
 			end: new Date(`December 2021`)

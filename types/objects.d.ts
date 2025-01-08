@@ -1,6 +1,6 @@
-export interface _workExperience {
+export interface _Experience {
 	title: string
-	business: string
+	location: string
 	date: _Date
 	points: Array<string>
 }

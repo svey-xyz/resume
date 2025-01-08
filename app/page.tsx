@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { WorkExperience } from "@/components/WorkExperience"
+import { Experience } from "@/components/Experience"
 import { personal, work, education } from "@/data";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
 			<div>
 				<h2>Professional Experience</h2>
 				{work.flatMap((exp) => {
-					return <WorkExperience exp={exp} className="mb-2"/>
+					return <Experience exp={exp} className="mb-2"/>
 				})}
 			</div>
 
@@ -21,7 +21,7 @@ const Home = () => {
 			<div>
 				<h2>Education</h2>
 				{education.flatMap((exp) => {
-					return <WorkExperience exp={exp} className="mb-2" />
+					return <Experience exp={exp} className="mb-2" />
 				})}
 			</div>
 			{/* <h3>BFA in Integrated Digital, with distinction</h3>
