@@ -8,9 +8,8 @@
 	h2 { @apply text-xl font-bold; }
 	h3 { @apply text-lg font-semibold; }
 
-	/* p { @apply mt-2; } */
 	a { @apply text-accent hover-text underline; }
-	hr { @apply my-2 h-[2px] bg-bg-secondary border-0 rounded; }
+
 	li::marker {
 		@apply text-fg/75;
 	}

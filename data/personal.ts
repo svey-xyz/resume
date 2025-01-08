@@ -34,7 +34,7 @@ const personal: personal = {
 		},
 		{
 			type: 'Other',
-			tools: ["Git", "Linux", "Docker", "Kubernetes", "GraphQL", "SQL", "SQLite", "REST"]
+			tools: ["Git", "Linux", "Docker", "Kubernetes", "Helm", "GraphQL", "SQL", "SQLite", "REST", "GitHub Actions"]
 		}
 	],
 	projects: [

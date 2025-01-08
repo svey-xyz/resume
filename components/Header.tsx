@@ -12,7 +12,7 @@ export const Header = ({personal, className}:Props) => {
 
 	return (
 		<section className={`${className}`}>
-			<div className="flex flex-row justify-between items-baseline">
+			<div className="flex flex-row justify-between items-baseline mb-1">
 				<h1>{name}</h1>
 				<p>
 					{socials.flatMap((social, i, arr) => {
