@@ -8,7 +8,7 @@ type Props = {
 export const Section = ({title, children, className}:PropsWithChildren<Props>) => {
 
 	return (
-		<section className={`${className} flex flex-col border-t border-solid border-bg-secondary/70 mt-2 pt-1`}>
+		<section className={`${className} flex flex-col border-t border-solid border-bg-secondary/70 mt-1 pt-[2px]`}>
 			<h2>{title}</h2>
 			{children}
 		</section>

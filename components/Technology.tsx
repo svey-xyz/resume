@@ -2,6 +2,7 @@
 
 import React, { PropsWithChildren } from 'react';
 import { Icon, iconExists } from '@iconify/react';
+import crypto from 'crypto'
 
 type Props = {
 	type: string
@@ -22,8 +23,10 @@ export const Technology = ({type, tools}:PropsWithChildren<Props>) => {
 		<span className=''>
 			<strong>{type}: </strong>
 			{tools.flatMap((tool, i, arr) => {
+				const key = crypto.createHash('md5').update(tool).digest('hex');
+				
 				return (
-					<span>
+					<span key={tool}>
 						{/* <Icon icon={getIconName(tech)} className='inline'/> //TODO: add icons */}
 						{tool }
 						{ (i < arr.length - 1) && <>, </> }

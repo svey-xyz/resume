@@ -20,7 +20,7 @@ export const Experience = ({exp, className}: Props) => {
 		<div className={`${className} mb-2`}>
 			<div className="flex flex-row justify-between items-baseline flex-wrap">
 				<h3>{ title }</h3>
-				<span className='font-extralight'>
+				<span className='font-extralight italic'>
 					{ infoString }
 				</span>
 			</div>

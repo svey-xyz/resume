@@ -4,6 +4,7 @@ import { personal, work, education } from "@/data";
 import { Section } from "@/components/Section";
 import crypto from 'crypto'
 import { Technology } from "@/components/Technology";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -48,7 +49,7 @@ const Home = () => {
 				</Section>
 			}
 
-			
+			<Footer />
 			
 		</div>
   );

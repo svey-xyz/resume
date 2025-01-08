@@ -61,6 +61,7 @@ const TailwindConfig = {
 				sans: ['var(--font-mona-sans)', 'sans-serif']
 			},
 			fontSize: {
+				xs: 'calc(var(--text-base-size) * (1 / (1.15 * var(--text-scale))))',
 				sm: 'calc(var(--text-base-size) * (1 / var(--text-scale)))',
 				base: 'var(--text-base-size)',
 				lg: 'calc(var(--text-base-size) * (1 + 2 * (var(--text-scale) - 1)))',
