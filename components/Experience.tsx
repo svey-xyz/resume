@@ -12,11 +12,12 @@ export const Experience = ({exp, className}: Props) => {
 	const { title, location, date, points } = exp
 
 	const separtor = (location && date) ? ' | ' : ''
-	const dateLine = date ? readableDate(date) : ''
-	const infoString = `${location}${separtor}${dateLine}`
+	const dateText = date ? readableDate(date) : ''
+	const locationText = location ? location : ''
+	const infoString = `${locationText}${separtor}${dateText}`
 
 	return (
-		<div className={`${className}`}>
+		<div className={`${className} mb-2`}>
 			<div className="flex flex-row justify-between items-baseline flex-wrap">
 				<h3>{ title }</h3>
 				<span className='font-extralight'>

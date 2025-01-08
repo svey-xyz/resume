@@ -1,5 +1,4 @@
 import { plural } from 'pluralize'
-import { ReactNode } from 'react'
 import slugify from 'slugify'
 
 
@@ -37,7 +36,7 @@ type readableDateProps = {
 	options?: Intl.DateTimeFormatOptions
 }
 
-export const readableDate = (date: CustomDate): ReactNode => {
+export const readableDate = (date: CustomDate): string => {
 	const locales = date.locales ?? 'en-ca'
 	const options = date.options ?? {
 		year: 'numeric',

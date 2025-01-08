@@ -36,6 +36,14 @@ const personal: personal = {
 			type: 'Other',
 			tools: ["Git", "Linux", "Docker", "Kubernetes", "GraphQL", "SQL", "SQLite", "REST"]
 		}
+	],
+	projects: [
+		{
+			title: 'Homelab',
+			points: [
+				`Deployed an enterprise class network stack to manage self-hostable applications.`
+			]
+		}
 	]
 }
 

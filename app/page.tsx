@@ -13,14 +13,14 @@ const Home = () => {
 			<Section title="Professional Experience">
 				{ work.flatMap((exp) => {
 					const key = crypto.createHash('md5').update(exp.title).digest('hex');
-					return <Experience exp={exp} className="mb-2" key={key} />
+					return <Experience exp={exp} key={key} />
 				})}
 			</Section>
 
 			<Section title="Education">
 				{ education.flatMap((exp) => {
 					const key = crypto.createHash('md5').update(exp.title).digest('hex');
-					return <Experience exp={exp} className="mb-2" key={key} />
+					return <Experience exp={exp}  key={key} />
 				})}
 			</Section>
 
@@ -38,9 +38,17 @@ const Home = () => {
 				
 			</Section>
 
-			<Section title={`Projects`} >
-				<p>Projects  - homelab / private cloud what skills were used</p>
-			</Section>
+			{ personal.projects &&
+				<Section title={`Projects`} >
+					{personal.projects.flatMap((exp) => {
+						const key = crypto.createHash('md5').update(exp.title).digest('hex');
+						return <Experience exp={exp} key={key} />
+					})
+					}
+				</Section>
+			}
+
+			
 			
 		</div>
   );
