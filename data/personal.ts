@@ -43,6 +43,13 @@ const personal: personal = {
 			points: [
 				`Deployed an enterprise class network stack to manage self-hostable applications.`
 			]
+		},
+		{
+			title: 'simpledotdash',
+			points: [
+				`[An open source dashboard project for the homelab](https://github.com/svey-xyz/simpledotdash). Built to manage my own homelab, as well as to learn new skills for frontend and backend.`,
+				`Built with Next.js, Prisma, Tailwindcss. Authentication allows for multiple users.`,
+			]
 		}
 	]
 }
