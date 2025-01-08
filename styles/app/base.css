@@ -3,12 +3,13 @@
 		@apply font-serif text-left text-base text-fg-primary bg-bg-primary font-light leading-tight;
 	}
 
-	h1, h2, h3, h4, h5, h6 { @apply font-serif leading-tight; }
+	h1, h2, h3, h4, h5, h6 { @apply font-serif leading-snug; }
 	h1 { @apply text-2xl font-bold; }
 	h2 { @apply text-xl font-bold; }
 	h3 { @apply text-lg font-semibold; }
 
-	p { @apply mt-2; }
+	/* p { @apply mt-2; } */
 	a { @apply text-accent hover-text underline; }
 	hr { @apply my-2; }
+	strong { @apply font-bold; }
 }

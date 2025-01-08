@@ -24,8 +24,23 @@ const Home = () => {
 			</Section>
 
 
-			<Section title={`Skills`} >
-				<p>Linux | Virtualization | Containerization | Git | Network Infrastructure | Relational Databases | SQL | REST | GraphQL | Web Development | Unit testing | JavaScript | TypeScript | Node.js | Bun  | PHP | Wordpress | React | Nextjs</p>
+			<Section title={`Technologies`} >
+				<span className="">
+					<strong>Languages:</strong>
+					Javascript Typescript Python Java PHP
+				</span>
+				<span className="">
+					<strong>Frontend:</strong>
+					React Tailwind Next.js HTML5 11ty Wordpress Shopify
+				</span>
+				<span className="">
+					<strong>Javascript:</strong>
+					Prisma Cloudflare Workers Webpack eslint postcss node bun
+				</span>
+				<span className="">
+					<strong>Other:</strong>
+					Git Linux Docker Kubernetes GraphQL SQL SQLite REST Proxmox
+				</span>
 			</Section>
 
 			<Section title={`Projects`} >
