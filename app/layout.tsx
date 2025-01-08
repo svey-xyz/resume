@@ -27,6 +27,8 @@ const RootLayout = ({
 			<head>
 				<meta charSet="utf-8" />
 				<title>svey | resume</title>
+				<base target="_blank"></base>
+
 			</head>
 			<body className={`${monaSans.variable} ${monaSerif.variable} antialiased grid min-h-screen place-items-center bg-bg-secondary print:min-h-0`}>
 				<main
