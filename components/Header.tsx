@@ -11,7 +11,7 @@ export const Header = ({personal, className}:Props) => {
 	const {name, socials, blurb} = personal
 
 	return (
-		<div className={`${className}`}>
+		<section className={`${className}`}>
 			<div className="flex flex-row justify-between items-baseline">
 				<h1>{name}</h1>
 				<p>
@@ -31,8 +31,7 @@ export const Header = ({personal, className}:Props) => {
 				</p>
 			</div>
 			<MDX text={personal.blurb} />
-		</div>
-		
+		</section>
 	);
 };
 
