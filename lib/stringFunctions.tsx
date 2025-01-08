@@ -49,14 +49,7 @@ export const readableDate = (date: CustomDate): ReactNode => {
 	const startDateText = date.start.toLocaleDateString(locales, options)
 	const endDateText = date.end?.toLocaleDateString(locales, options)
 
-	return (
-		<span>
-			{startDateText}
-			{ endDateText ?
-				<> - { endDateText}</> :
-				date.ongoing &&
-				<> - {ongoingText}</>
-			}
-		</span>
-	);
+	const dateAppend = endDateText ? ` - ${endDateText}` : date.ongoing ? ` - ${ongoingText}` : ''
+
+	return startDateText + dateAppend
 }

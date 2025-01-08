@@ -11,12 +11,16 @@ type Props = {
 export const Experience = ({exp, className}: Props) => {
 	const { title, location, date, points } = exp
 
+	const separtor = (location && date) ? ' | ' : ''
+	const dateLine = date ? readableDate(date) : ''
+	const infoString = `${location}${separtor}${dateLine}`
+
 	return (
 		<div className={`${className}`}>
 			<div className="flex flex-row justify-between items-baseline flex-wrap">
 				<h3>{ title }</h3>
 				<span className='font-extralight'>
-					<em>{location}</em> | <em>{readableDate(date)}</em>
+					{ infoString }
 				</span>
 			</div>
 			<ul className='pl-5 list-disc'>

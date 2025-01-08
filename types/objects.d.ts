@@ -1,7 +1,7 @@
 export interface _Experience {
 	title: string
-	location: string
-	date: _Date
+	location?: string
+	date?: _Date
 	points: Array<string>
 }
 
@@ -9,7 +9,8 @@ export interface _personal {
 	name: string
 	socials: Array<_social>
 	blurb: string
-	technologies: Array<_technology>
+	technologies?: Array<_technology>
+	projects?: Array<_Experience>
 }
 
 export interface _technology {
