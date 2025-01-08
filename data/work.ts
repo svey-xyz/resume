@@ -14,7 +14,7 @@ const work: Array<Experience> = [
 		]
 	},
 	{
-		title: 'Lecturing in Web Design',
+		title: 'Web Design Lectures',
 		location: 'Freelance',
 		date: {
 			start: new Date(`January 2021`),
@@ -27,7 +27,7 @@ const work: Array<Experience> = [
 		]
 	},
 	{
-		title: 'Web Development Freelance',
+		title: 'Full Stack Web Development',
 		location: 'Freelance',
 		date: {
 			start: new Date(`March 2020`),

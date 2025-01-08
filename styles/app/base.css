@@ -1,15 +1,19 @@
 @layer base {
 	body {
-		@apply font-serif text-left text-base text-fg-primary bg-bg-primary font-light leading-tight;
+		@apply font-sans text-left text-base text-fg-primary bg-bg-primary font-light leading-tight;
 	}
 
-	h1, h2, h3, h4, h5, h6 { @apply font-serif leading-snug; }
-	h1 { @apply text-2xl font-bold; }
+	h1, h2, h3, h4, h5, h6 { @apply font-sans leading-snug; }
+	h1 { @apply text-2xl font-bold font-serif; }
 	h2 { @apply text-xl font-bold; }
 	h3 { @apply text-lg font-semibold; }
 
 	/* p { @apply mt-2; } */
 	a { @apply text-accent hover-text underline; }
-	hr { @apply my-2; }
+	hr { @apply my-2 h-[2px] bg-bg-secondary border-0 rounded; }
+	li::marker {
+		@apply text-fg/75;
+	}
+	
 	strong { @apply font-bold; }
 }
