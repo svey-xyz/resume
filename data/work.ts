@@ -21,7 +21,7 @@ const work: Array<Experience> = [
 			ongoing: true
 		},
 		points: [
-			`Created an introduction to web design workshop for a class of 4th year students at TMU.A 3 hour lexture with hands - on compoennts that has been highly requested by students and proffessors. 2025 will mark my 4th year running of conducting this workshop at TMU.`,
+			`Created an introduction to web design workshop for a class of 4th year students at TMU. A 3 hour lexture with hands - on compoennts that has been highly requested by students and proffessors. 2025 will mark my 4th year running of conducting this workshop at TMU.`,
 			`Positive feedback from TMU lead to the creation of an asynchronous Wordpress workshop for the University of North Carolina at Greensboro(UNCG), that has been used to teach a large number of students over the years.`,
 			`Was invited to present artist talks at TMU and UNCG, on- web design, web development, interactive web installations, and working as a contractor.`,
 		]

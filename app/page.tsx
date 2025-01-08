@@ -3,6 +3,7 @@ import { Experience } from "@/components/Experience"
 import { personal, work, education } from "@/data";
 import { Section } from "@/components/Section";
 import crypto from 'crypto'
+import { Technologies } from "@/components/Technologies";
 
 const Home = () => {
   return (
@@ -25,17 +26,17 @@ const Home = () => {
 
 
 			<Section title={`Technologies`} >
-				<span className="">
-					<strong>Languages:</strong>
-					Javascript Typescript Python Java PHP
-				</span>
+				<Technologies
+					title="Languages"
+					technologies={["Javascript", "Typescript", "Python", "Java", "PHP"]}
+				/>
 				<span className="">
 					<strong>Frontend:</strong>
 					React Tailwind Next.js HTML5 11ty Wordpress Shopify
 				</span>
 				<span className="">
-					<strong>Javascript:</strong>
-					Prisma Cloudflare Workers Webpack eslint postcss node bun
+					<strong>Backend:</strong>
+					Prisma Cloudflare Workers Sanity Webpack eslint postcss node bun
 				</span>
 				<span className="">
 					<strong>Other:</strong>
