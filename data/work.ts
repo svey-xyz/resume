@@ -8,7 +8,7 @@ const work: Array<Experience> = [
 		},
 		points: [
 			`Created & maintain [Simple Shader Component](https://www.npmjs.com/package/@svey-xyz/simple-shader-component) - a simple to use webgl shader component, with included framework wrappers and strong typing.`,
-			`Created [vldx](https://www.npmjs.com/package/vldx) -  an open-source javascript based HTML form validator that is easy to use, reduces API calls, and supports custom rules.`,
+			`Created [domlamps](https://www.npmjs.com/package/domlamps) -  an open-source native dom library to create dynamic lighting effects for web pages, with a focus on performance and accessibility.`,
 			`Open sourced my personal [Next.js template](https://github.com/svey-xyz/site-template) - with highly configurable base components and schemas.`,
 			`Received positive community & maintainer feedback when [contributing to an open source Sanity plugin](https://github.com/ndimatteo/sanity-plugin-note-field/pull/5).`,
 		]
@@ -21,7 +21,7 @@ const work: Array<Experience> = [
 			ongoing: true
 		},
 		points: [
-			`Created an introduction to web design workshop for a class of 4th year students. The 3 hour lecture with hands-on components has been highly requested by students and professors; 2025 will mark my 4th year conducting this workshop at Toronto Metropolitan University (TMU).`,
+			`Created an introduction to web design workshop for a class of 4th year students. The 3 hour lecture with hands-on components has been highly requested by students and professors; 2026 will mark my 5th year conducting this workshop at Toronto Metropolitan University (TMU).`,
 			`Positive feedback from TMU lead to the creation of an asynchronous Wordpress workshop for the University of North Carolina at Greensboro (UNCG), that has been used to teach a large number of students over the years.`,
 			`Presented artist talks at TMU and UNCG, on- web design, web development, interactive web installations, and working as a contractor.`,
 		]
@@ -34,7 +34,7 @@ const work: Array<Experience> = [
 			ongoing: true
 		},
 		points: [
-			`Clients include [Victory Social Club (VSC)](https://victorysocialclub.com/), [LPT BIA](https://lptbia.com/), TMU, the City of Toronto, and more.`,
+			`Clients include [Victory Social Club (VSC)](https://victorysocialclub.com/), [LPT BIA](https://lptbia.com/), TMU, the City of Toronto, [Western University](https://wipilc.ca), and more.`,
 			`Reduced overhead by creating bespoke management interfaces using Sanity and Nextjs; resulting in hours of work saved for clients.`,
 			`Increased Lighthouse scores by up to 30pts by reducing CSR and SSR, where applicable, in favour of SSG.`,
 			`Provided intuitive documentation for a custom client interface, making onboarding new developers to the project easier.`,

@@ -18,7 +18,7 @@ const personal: personal = {
 			link: 'tel:+16138067643'
 		},
 	],
-	blurb: `I am a full stack web developer, and homelab enthusiast, working to create robust web experiences. My unique background in tech and the arts inﬂuences my approach to projects and leads to innovative solutions.`,
+	blurb: `I am a full stack web developer, and homelab enthusiast, working to create robust web experiences. My unique background in tech and the arts influences my approach to projects and leads to innovative solutions.`,
 	technologies: [
 		{
 			type: 'Languages',
@@ -41,14 +41,16 @@ const personal: personal = {
 		{
 			title: 'Homelab',
 			points: [
-				`Deployed an enterprise class network stack to manage self-hostable applications.`
+				`Deployed an enterprise class network stack to manage self-hostable applications.`,
+				`Managed hardware installations, and created custom tooling to manage the stack.`,
+				`More recently I have expanded my deployment to include a portable Raspberry Pi cluster.`,
 			]
 		},
 		{
-			title: 'simpledotdash',
+			title: 'AzerothChatter',
 			points: [
-				`[An open source dashboard project for the homelab](https://github.com/svey-xyz/simpledotdash). Built to manage my own homelab, as well as to learn new skills for frontend and backend.`,
-				`Built with Next.js, Prisma, Tailwindcss. Authentication allows for multiple users.`,
+				`[An open source project for AzerothCore](https://github.com/svey-xyz/azerothchatter). Low computational cost realistic in world chatter for locally hosted game servers.`,
+				`Built with Python, Lua, and Claude AI.`,
 			]
 		}
 	]
