@@ -26,15 +26,15 @@ const personal: personal = {
 		},
 		{
 			type: 'Frontend',
-			tools: ["React", "Tailwindcss", "Next.js", "HTML5", "11ty", "Wordpress", "Shopify"]
+			tools: ["React", "Tailwindcss", "Next.js", "Astro", "HTML5", "11ty", "Wordpress", "Shopify", "Bootstrap", "Sass", "CSS3", "WebGL", "Three.js"]
 		},
 		{
 			type: 'Javascript Env',
-			tools: ["Prisma", "Cloudflare Workers", "Sanity", "Webpack", "PostCSS", "Node", "Bun"]
+			tools: ["Prisma", "Cloudflare Workers", "Sanity", "Webpack", "PostCSS", "Node", "Bun", "Vite", "ESBuild"]
 		},
 		{
 			type: 'Other',
-			tools: ["Git", "Linux", "Docker", "Kubernetes", "Helm", "GraphQL", "SQL", "SQLite", "REST", "GitHub Actions"]
+			tools: ["Git", "Linux", "Docker", "Kubernetes", "Helm", "GraphQL", "SQL", "SQLite", "REST", "GitHub Actions", "Claude AI", "OpenCode", "Moonshot AI", "Vercel", "NGINX"]
 		}
 	],
 	projects: [
