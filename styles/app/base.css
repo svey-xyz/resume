@@ -5,7 +5,7 @@
 
 	h1, h2, h3, h4, h5, h6 { @apply font-sans leading-snug; }
 	h1 { @apply text-2xl font-bold font-serif; }
-	h2 { @apply text-xl font-bold; }
+	h2 { @apply text-xl font-bold pt-2; }
 	h3 { @apply text-lg font-semibold; }
 
 	a { @apply text-accent hover-text underline; }
